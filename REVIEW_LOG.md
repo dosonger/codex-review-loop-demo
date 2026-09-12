@@ -19,3 +19,12 @@ Next instruction: collapse every run of non-ASCII-letter/digit characters to one
 - Non-string input raises `TypeError`.
 - The complete test suite passes.
 
+## Remote reviewer decision — REVISE
+
+GitHub verification found that `AGENTS.md` prescribed `python`, while the demonstrated environment provides `python3`. The follow-up instruction was to make the command executable as written and rerun the suite.
+
+## Iteration 3 — executor report
+
+- Updated the prescribed command to `python3 -m unittest discover -s tests -v`.
+- Reran the complete suite: 4 tests passed.
+- Reviewer decision: `ACCEPT`.
